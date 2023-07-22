@@ -2,10 +2,10 @@ const countPaths = (grid) => {
     let rows = grid.length;
     let cols = grid[0].length;
 
-    return gridTravers(rows, cols);
+    return gridTravers(rows, cols, grid);
 };
 
-const gridTravers = (rows, cols, r = 0, c = 0, memo = {}) => {
+const gridTravers = (rows, cols, grid, r = 0, c = 0, memo = {}) => {
 
     let count = 0;
     const position = r + ',' + c;
@@ -13,10 +13,10 @@ const gridTravers = (rows, cols, r = 0, c = 0, memo = {}) => {
     if (position in memo) return memo[position];
 
     if (r >= rows || c >= cols || grid[r][c] === "X") return count;
-    if (r === rows - 1 && c === cols - 1 ) return count + 1;
+    if (r === rows - 1 && c === cols - 1) return count + 1;
 
-    count += gridTravers(rows, cols, r + 1, c, memo); // down
-    count += gridTravers(rows, cols, r, c + 1, memo); // right
+    count += gridTravers(rows, cols, grid, r + 1, c, memo); // down
+    count += gridTravers(rows, cols, grid, r, c + 1, memo); // right
 
     memo[position] = count;
     return count
