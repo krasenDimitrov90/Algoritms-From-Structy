@@ -26,9 +26,9 @@ function _minChage(amount, coins, memo = {}) {
     }
 
     memo[amount] = min;
-    console.log(memo);
     return min;
 }
 
-console.log(minChange(8, [1, 5, 4, 12]));
-// console.log(minChange(271, [10, 8, 265, 24]));
+console.log(minChange(8, [1, 5, 4, 12])); // -> 2, because 4+4 is the minimum coins possible
+console.log(minChange(271, [10, 8, 265, 24])); // -1
+console.log(minChange(2017, [4, 2, 10])); // -> -1

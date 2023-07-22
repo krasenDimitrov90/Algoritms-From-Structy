@@ -17,4 +17,4 @@ const countingChange = (amount, coins, i = 0, memo = {}) => {
     return total;
 }
 
-console.log(countingChange(240, [1, 2, 3, 4, 5, 6, 7, 8, 9]));
+console.log(countingChange(240, [1, 2, 3, 4, 5, 6, 7, 8, 9])); // -> 1525987916

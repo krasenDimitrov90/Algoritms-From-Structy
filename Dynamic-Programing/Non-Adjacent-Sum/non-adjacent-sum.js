@@ -1,3 +1,8 @@
+// Write a function, nonAdjacentSum, that takes in an array of numbers as an argument. 
+// The function should return the maximum sum of non-adjacent elements in the array. 
+// There is no limit on how many elements can be taken into the sum 
+// as long as they are not adjacent.
+
 const nonAdjacentSum = (nums, memo = {}) => {
     if (nums.length <= 0) return 0;
     if (nums.length === 1) return nums[0];
@@ -27,11 +32,11 @@ const nonAdjacentSum = (nums, memo = {}) => {
 //     return memo[numbers];
 // };
 
-console.log(nonAdjacentSum([2, 4, 5, 12, 7]));
-console.log(nonAdjacentSum([7, 5, 5, 12, 17, 29]));
+console.log(nonAdjacentSum([2, 4, 5, 12, 7])); // -> 16
+console.log(nonAdjacentSum([7, 5, 5, 12, 17, 29]));  // -> 48
 console.log(nonAdjacentSum([
     72, 62, 10, 6, 20, 19, 42,
     46, 24, 78, 30, 41, 75, 38,
     23, 28, 66, 55, 12, 17, 9,
     12, 3, 1, 19, 30, 50, 20
-]));
+])); // -> 488

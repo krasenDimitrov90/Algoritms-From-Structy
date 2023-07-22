@@ -33,7 +33,7 @@ const arrayStepper = (arr) => {
 // };
 
 
-console.log(arrayStepper([2, 4, 2, 0, 0, 1]));
+console.log(arrayStepper([2, 4, 2, 0, 0, 1])); // true
 // console.log(arrayStepper([ 
 //   31, 30, 29, 28, 27,
 //   26, 25, 24, 23, 22,
@@ -41,4 +41,4 @@ console.log(arrayStepper([2, 4, 2, 0, 0, 1]));
 //   16, 15, 14, 13, 12,
 //   11, 10, 9, 8, 7, 6,
 //   5, 3, 2, 1, 0, 0, 0
-// ]));
+// ])); // false

@@ -1,3 +1,10 @@
+// Write a function, countPaths, that takes in a grid as an argument. 
+// In the grid, 'X' represents walls and 'O' represents open spaces. 
+// You may only move down or to the right and cannot pass through walls. 
+// The function should return the number of ways possible to travel 
+// from the top-left corner of the grid to the bottom-right corner.
+
+
 const countPaths = (grid) => {
     let rows = grid.length;
     let cols = grid[0].length;
@@ -28,7 +35,7 @@ const gridTravers = (rows, cols, grid, r = 0, c = 0, memo = {}) => {
 //     ["O", "O", "X"],
 //     ["O", "O", "O"],
 //     ["O", "O", "O"],
-// ];
+// ]; --> 5 paths
 const grid = [
     ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"],
     ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"],
@@ -46,4 +53,4 @@ const grid = [
     ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"],
     ["O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O", "O"],
 ];
-console.log(countPaths(grid)); // -> 5
+console.log(countPaths(grid)); // -> 40116600
