@@ -39,7 +39,6 @@ const duplicateOrUnique = arr => {
 //     return sum - setSum;
 // }
 
-console.log(duplicateOrUnique([2, 4, 1, 6, 3, 4])); // === 4
 console.log(duplicateOrUnique([1, 2, 3, 6, 5, 4, 1])); // === 1
 console.log(duplicateOrUnique([1, 2, 3, 1, 2, 3, 4])); // === 4
 console.log(duplicateOrUnique([3, 6, 9, 2, 5, 8, 1, 4, 8, 7])); // === 8
