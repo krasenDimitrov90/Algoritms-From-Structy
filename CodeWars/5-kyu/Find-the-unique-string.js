@@ -1,3 +1,4 @@
+// Not fast enough
 function findUniq(arr) {
 
     const newArr = [];
