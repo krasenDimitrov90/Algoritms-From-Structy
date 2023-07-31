@@ -1,3 +1,7 @@
+// An integer partition of n is a weakly decreasing list of positive integers which sum to n.
+// For example, there are 7 integer partitions of 5:
+// [5], [4,1], [3,2], [3,1,1], [2,2,1], [2,1,1,1], [1,1,1,1,1].
+
 function partitions(n, arr = null, idx = 0, memo = {}) {
     if (!arr) {
         arr = [];
@@ -20,4 +24,4 @@ function partitions(n, arr = null, idx = 0, memo = {}) {
     return total;
 }
 
-console.log(partitions(1))
+console.log(partitions(5))
