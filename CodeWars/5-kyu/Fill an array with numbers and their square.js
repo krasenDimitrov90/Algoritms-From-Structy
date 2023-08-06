@@ -1,5 +1,6 @@
 function makeMatrix(nums) {
     function getSubArrCount(n, i = 0, sum = 0) {
+        // i is like [1,2,3,...,n] AND sum is like 1+2+3+...+n
         while (sum < n) {
             sum += ++i;
         }
