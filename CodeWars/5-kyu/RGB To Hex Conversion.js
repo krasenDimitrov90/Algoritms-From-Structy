@@ -1,7 +1,7 @@
 function rgb(r, g, b) {
     return [r, g, b]
         .map(x => x < 0 ? 0 : x > 255 ? 255 : x)
-        .map(v => v.toString(16) === '0' ? '00' : v.toString(16))
+        .map(v => v.toString(16).length === 1 ? '0' +  v.toString(16) : v.toString(16))
         .join('').toUpperCase();
 }
 
