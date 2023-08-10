@@ -8,7 +8,6 @@ function perimeter(n) {
         memo.sum += memo[n];
         return start ? memo.sum : memo[n];
     };
-    // console.log(fib(n))
     return 4 * fib(n);
 }
 
